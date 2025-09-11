@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// Importar las fuentes de Google
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Incluir los estilos base de Angular Material
+@include mat.core();
+
+// Definir el tema Azure Blue personalizado que SÍ funcione
+$azure-blue-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  ),
+  typography: (
+    brand-family: 'Roboto',
+    plain-family: 'Roboto',
+  ),
+  density: (
+    scale: 0
+  )
+));
+
+// Aplicar el tema envuelto en un selector (requerido para M3)
+html {
+  @include mat.all-component-themes($azure-blue-theme);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

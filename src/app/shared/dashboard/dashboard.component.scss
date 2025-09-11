@@ -1,0 +1,32 @@
+@use "@angular/material" as mat;
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: #0078d4,
+      container-text-color: white,
+    )
+  );
+  mat-icon-button {
+    @include mat.icon-button-overrides(
+      (
+        icon-color: white,
+      )
+    );
+  }
+}
+
+.example-container {
+  width: auto;
+  height: 93vh;
+  margin: 1px;
+}
+
+mat-drawer {
+  border-right: 1px solid #c0c6d0;
+  border-radius: 0;
+}
