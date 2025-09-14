@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, signal } from '@angular/core';
 import { MaterialModule } from '../../ui/material.module';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-drawer-menu',
   standalone: true,
-  imports: [MaterialModule, CommonModule, RouterLink],
+  imports: [MaterialModule, CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './drawer-menu.component.html',
   styleUrl: './drawer-menu.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

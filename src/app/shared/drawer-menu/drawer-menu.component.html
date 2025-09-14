@@ -1,5 +1,10 @@
 <mat-nav-list>
-  <mat-list-item routerLink="/dashboard/home" (click)="handleItemClick()">
+  <mat-list-item
+    routerLink="/dashboard/home"
+    (click)="handleItemClick()"
+    routerLinkActive="active-link"
+    tabindex="-1"
+  >
     <span class="icon-and-text">
       <mat-icon class="icon-margin">home</mat-icon>
       Home
@@ -8,6 +13,7 @@
   <mat-list-item
     routerLink="/dashboard/drawer/table"
     (click)="handleItemClick()"
+    routerLinkActive="active-link" tabindex="-1"
   >
     <span class="icon-and-text">
       <mat-icon class="icon-margin">all_out_icon</mat-icon>
@@ -17,6 +23,7 @@
   <mat-list-item
     routerLink="/dashboard/drawer/list"
     (click)="handleItemClick()"
+    routerLinkActive="active-link" tabindex="-1"
   >
     <span class="icon-and-text">
       <mat-icon class="icon-margin">list</mat-icon>
@@ -43,6 +50,7 @@
         routerLink="/dashboard/drawer/button"
         class="submenu-content"
         (click)="handleItemClick()"
+        routerLinkActive="active-link" tabindex="-1"
       >
         <span class="icon-and-text">
           <mat-icon class="icon-margin">rss_feed</mat-icon>
@@ -53,6 +61,7 @@
         routerLink="/dashboard/drawer/tabs"
         class="submenu-content"
         (click)="handleItemClick()"
+        routerLinkActive="active-link" tabindex="-1"
       >
         <span class="icon-and-text">
           <mat-icon class="icon-margin">phone</mat-icon>
