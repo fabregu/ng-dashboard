@@ -11,4 +11,44 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+
+  modules = [
+    {
+      title: 'Admins',
+      description: 'View your dashboard with key metrics and insights asda sadsasdasdas asdf asdf asdf asdfas asdf asdfas asdf asdf.',
+      traits: ['charming', 'graceful', 'sassy'],
+      route: '/dashboard/admin/admins',
+    },
+    {
+      title: 'Users',
+      description: 'View your dashboard with key metrics and insights.',
+      traits: ['fluffy', 'alert', 'intelligent'],
+      route: '/dashboard/user/users'
+    },
+    {
+      title: 'Editors',
+      description: 'View your dashboard with key metrics and insights.',
+      traits: ['charming', 'graceful', 'sassy'],
+      route: '/dashboard/editor/editors'
+    },
+    {
+      title: 'Viewers',
+      description: 'View your dashboard with key metrics and insights.',
+      traits: ['fluffy', 'alert', 'intelligent'],
+      route: '/dashboard/viewer/viewers'
+    },
+    {
+      title: 'Cars',
+      description: 'View your dashboard with key metrics and insights.',
+      traits: ['charming', 'graceful', 'sassy'],
+      route: '/dashboard/cars/cars'
+    },
+    {
+      title: 'Articles',
+      description: 'View your dashboard with key metrics and insights.',
+      traits: ['charming', 'graceful', 'sassy'],
+      route: '/dashboard/articles/articles'
+    }
+  ]
+}
